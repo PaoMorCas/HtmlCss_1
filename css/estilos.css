@@ -1,0 +1,94 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-size:12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-image: url("../images/logo.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-attachment:fixed;
+    background-color: lawngreen; */
+}
+
+nav{
+    display:flex;
+    background-color: salmon;
+    padding: 10px;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+   
+}
+nav li{
+    padding-left: 10px;
+    list-style: none;
+    color: white;
+}
+
+nav li a{
+    color: gray;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color:white;
+}
+
+#prueba{
+    background-color: red;
+    height: 400px;
+    width: 1200px;
+    align-items: center;
+    display: flex;
+    background-image: url("https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/curve.png");
+    
+    background-position: center center;
+}
+#segundo{
+    background-color:blue;
+}
+/* ------------------ Main section */
+
+main{
+    background-color: sandybrown;
+    padding: 20%;
+    text-align: center;
+}
+
+main h1{
+    background-color: seagreen;
+}
+
+#contenedor-cajas{
+    display: flex;
+    justify-content: center;
+    background-color: lavender;
+    background-image: url("https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/curve.png");
+    background-size: cover;
+    background-position: center top;
+    padding: 15%;
+   
+}
+.contenido-caja{
+    background-color: violet;
+
+}
+
+#caja{
+    width: 250px;
+    height: 300px;
+    /* background-color: green; */
+    /* margin:5px; */
+    padding: 10px;
+}
+#caja img{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    
+}
