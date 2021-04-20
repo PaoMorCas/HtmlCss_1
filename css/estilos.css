@@ -1,8 +1,22 @@
-html, body{
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ------------------- Variables */
+:root{
+    /* ----- Colores */
+    --salmon-color:salmon;
+    --white-color:white;
+    /* ----- Espaciado */
+    --space:.6em;
+    /* ----- Box shadow */
+    --box: 0 0 10px #7d7c7c;
+}
+/* ------------------- Variables */
+
+html > body{
     margin: 0px;
     padding: 0px;
-    font-size:12px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-size:12pt; */
+    font-family: 'Pacifico', cursive;
     /* background-image: url("../images/logo.svg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -13,10 +27,11 @@ html, body{
 
 nav{
     display:flex;
-    background-color: salmon;
-    padding: 10px;
+    background-color: var(--salmon-color);
+    padding: var(--space);  
+     /* padding: 10px;  */
     justify-content: space-between;
-    color: white;
+    color: var(--white-color);
     align-items: center;
 }
 
@@ -25,20 +40,47 @@ nav ul{
    
 }
 nav li{
-    padding-left: 10px;
+    padding-left: var(--space);
     list-style: none;
-    color: white;
+    color: var(--white-color);
 }
 
 nav li a{
-    color: gray;
+    color: #b3b1b1;
     text-decoration: none;
 }
 
 nav li a:hover{
-    color:white;
+    color: var(--white-color);
+    text-shadow: 0 0 10px var(--white-color);
 }
 
+nav div img{
+    width: 100%;
+}
+
+main{
+    /* background-color: sandybrown; */
+  
+}
+main h1{
+    /* background-color: seagreen; */
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+
+label{
+    display: block;
+    font-size: medium;
+    margin-top:10px;
+   
+}
+
+
+
+/* 
 #prueba{
     background-color: red;
     height: 400px;
@@ -51,44 +93,212 @@ nav li a:hover{
 }
 #segundo{
     background-color:blue;
-}
+} */
 /* ------------------ Main section */
 
-main{
-    background-color: sandybrown;
-    padding: 20%;
-    text-align: center;
+
+#titulo{
+    padding: 5em;
+    /* width:90%; */  /* se elimina pq se desborda cuando font size aumenta o cambio tampo de pantalla, el tamaño se ajusta con el restante del div */
 }
 
-main h1{
-    background-color: seagreen;
-}
 
-#contenedor-cajas{
-    display: flex;
-    justify-content: center;
-    background-color: lavender;
+/* ----------------------- Cajas */
+#cajas{
+    background-color: var(--white-color);
     background-image: url("https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/curve.png");
     background-size: cover;
     background-position: center top;
-    padding: 15%;
-   
-}
-.contenido-caja{
-    background-color: violet;
-
+    max-height:4em;
+    padding: 15em 0;
+    display: flex;
+    justify-content: center;
 }
 
-#caja{
-    width: 250px;
-    height: 300px;
+.caja{
+    margin-top:-20em;
+    width: 15em;
+     /*height: 300px; */
     /* background-color: green; */
     /* margin:5px; */
-    padding: 10px;
-}
-#caja img{
-    width: 150px;
-    height: 150px;
-    background-color: brown;
+    padding: var(--space);
     
 }
+
+.contenedor_img{
+    text-align: center;
+}
+
+.caja img{
+    width: 100%;
+    /* height: 150px; */
+    /* background-color: brown; */
+
+    
+}
+
+.caja h3,
+.caja p{
+    text-align: left;
+}
+
+.contenido_caja{
+    background-color: var(--white-color);
+    padding: 1em;
+    box-shadow: 0 0 10px #7d7c7c;
+}
+
+.main_button{
+    background-color: var(--salmon-color);
+    padding: 1em;
+    width: 100%;
+    color: var(--white-color);
+    border: 1px solid #ef958b;
+    font-weight: bold;
+    border-radius: var(--space);
+    font-size: .8em;
+    cursor:pointer;
+}
+
+.main_button:hover{
+    background-color: #f36353;
+}
+/* .contenedor {
+    font-size: 1.25em;
+}
+.letra-pequeña {
+    font-size: .9em;
+} */
+
+/* -------------------- Caracteristicas */
+
+#caracteristicas{
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+    border-bottom: 1px solid #b3b1b1;
+    background-color: #f7f7f7;
+}
+
+.caracteristica{
+    width: 15em;
+    padding:0 5em;
+}
+
+.caracteristica img{
+   /* background-color: aqua; */
+   width: 80%;
+   
+}
+
+
+
+
+
+/* ----------------------- Menciones */
+
+#menciones{
+    display: flex;
+    justify-content: center;
+    padding: 1em 10em;
+}
+
+.contenedor_mencion{
+    /* background-color: violet; */
+    border: 1px solid #7d7c7c;
+    box-shadow: 0 0 10px #7d7c7c;
+}
+.mencion{
+    padding: 0 1em;
+    /* background-color: wheat; */
+    width: 15em;
+   
+}
+
+/* .mencion .contenedor_txt > h3, p{  */ /* --------ANOTHER POSSIBLE */
+/* .mencion .contenedor_txt *{ */ /* ------------ANOTHER POSSIBLE */
+.mencion .contenedor_txt h3,
+.mencion .contenedor_txt p{
+    margin:0;
+}
+
+.mencion img{
+    /* background-color: turquoise; */
+    width: 100%;
+    height: 10em;
+}
+
+.mencion .contenedor_txt{
+    padding: .5em 1em;
+    background-color: var(--white-color);
+}
+
+/* ----------------------- Productos */
+
+#main-products{
+    margin:0 5em;
+}
+
+#main-products h1{
+    text-align: start;
+}
+
+/* ----------------------- Ventas */
+
+#container-ventas > div{
+    padding: var(--space);
+    box-shadow: 0 0 10px #7d7c7c;
+    margin:1em;
+ }
+
+ #modulo_pago{
+     background-color: var(--white-color);
+     padding: var(--space);
+ }
+
+ .data{
+    margin-top: 5px;
+    width: 100%;
+    height: 2em;
+    border-radius: .2em;
+    border:1px solid #7d7c7c;
+    box-sizing: border-box;
+   /* padding: 2em;
+     box-sizing: border-box; */
+}
+
+#modulo_pago .main_button{
+    margin-top: var(--space);
+}
+/* ---------------------FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: black;
+}
+
+footer a{
+    color: #b3b1b1;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:var(--white-color);
+    text-shadow: 0 0 10px var(--white-color);
+}
+
+#x{
+    color:green ;
+}
+
+.b { 
+    color:blue; 
+}
+.a { 
+    color:red; 
+} 
+
+ 

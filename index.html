@@ -1,58 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css" >
+    <link rel="stylesheet" href="css/mobile.css">
     <title>Brand</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div>
-            <img src="./images/logo.svg" alt="brand"/>
-        </div>
-        <div id="options">
-            <ul>
-                <li><a href="#">Faqs</a></li>
-                <li><a href="#">Productos y descripción</a></li>
-            </ul>
-        </div>
+      <div>
+        <img src="./images/logo.svg" alt="brand" />
+      </div>
+      <div id="options">
+        <ul>
+          <li><a href="#">Faqs</a></li>
+          <li><a href="#">Productos y descripción</a></li>
+        </ul>
+      </div>
     </nav>
+
+    <!-- <span style="color:coral"  class="b"  id="x">Hi</span>
+    <span class="b a">Hi , what's up?</span> -->
+
+    <!-- <div class="contenedor">
+        <p>.contenedor tiene un tamaño de 16px * 1.25 = 20px.</p>
+        <p class="letra-pequeña">.letra-pequeña tiene un tamaño de 20px * 0.9 = 18px. Toma 20px porque el em toma el último valor definido en alguno de sus contenedores.</p>
+      </div>
+      <p class="letra-pequeña">.letra-pequeña, ahora que no está dentro de .contenedor, tiene un tamaño de 16px * 0.9 = 14.4px. Toma 16px porque no se ha definido un font-size en alguno de los contenedores, por lo que toma el valor del navegador.</p>
+       -->
+
     <main>
-        <div>
-            <h1>Este es un producto increible, no se que haces viendo,<br>
-                 que lo puedes tener</h1>
+      <header id="titulo">
+        <h1>
+          Este es un producto increible, no se que haces viendo,<br />
+          que lo puedes tener
+        </h1>
+      </header>
+      <section id="cajas">
+        <!-- <div id="cajas"> -->
+        <div class="caja">
+          <div class="contenido_caja">
+            <div class="contenedor_img">
+              <img src="./images/yay.gif" alt="brand" />
+            </div>
+            <h3>Producto 1</h3>
+            <p>
+              Miles de productos hay en el mercado pero nada como una caja con
+              gatos
+            </p>
+            <button class="main_button">Lo quiero</button>
+          </div>
         </div>
-        <div id="contenedor-cajas">
-            <!-- <div id="cajas"> -->
-                <div id="caja">
-                    <div class="contenido-caja">
-                        <img src="./images/yay.gif" alt="brand"/>
-                        <h3>Producto 1</h3>
-                        <p>Miles de productos hay en el mercado pero nada como
-                                 una caja con gatos</p>
-                        <button>Lo quiero</button>
-                    </div>
-                </div>
-                <div id="caja">
-                    <div class="contenido-caja">
-                        <img src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png" alt="brand"/>
-                        <h3>Producto 1</h3>
-                        <p>Miles de productos hay en el mercado pero nada 
-                            como una caja con gatos</p>
-                        <button>Lo quiero</button>
-                    </div>
-                </div>
-            <!-- </div> -->
+        <div class="caja">
+          <div class="contenido_caja">
+            <div class="contenedor_img">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="brand"
+              />
+            </div>
+            <h3>Producto 1</h3>
+            <p>
+              Miles de productos hay en el mercado pero nada como una caja con
+              gatos
+            </p>
+            <button class="main_button">Lo quiero</button>
+          </div>
         </div>
+        <!-- </div> -->
+      </section>
+      <section>
+        <div id="caracteristicas">
+          <div class="caracteristica">
+            <div class="contenedor_img">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="suave"
+              />
+            </div>
+            <h3>Los más suavecitos</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
+          <div class="caracteristica">
+            <div class="contenedor_img">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="increible"
+              />
+            </div>
+            <h3>Los más suavecitos</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
+          <div class="caracteristica">
+            <div class="contenedor_img">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="confiable"
+              />
+            </div>
+            <h3>Los más suavecitos</h3>
+            <p>
+              Miles de productos hay en el mercado, pero nada como una caja con
+              gatitos
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h2>Menciones</h2>
+        </header>
+        <div id="menciones">
+          <div class="mencion">
+            <div class="contenedor_mencion">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="mecion_1"
+              />
+              <div class="contenedor_txt">
+                <h3>Mario</h3>
+                <p>
+                  Miles de productos hay en el mercado, pero nada como una caja
+                  con gatitos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mencion">
+            <div class="contenedor_mencion">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="mecion_1"
+              />
+              <div class="contenedor_txt">
+                <h3>Mario</h3>
+                <p>
+                  Miles de productos hay en el mercado, pero nada como una caja
+                  con gatitos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mencion">
+            <div class="contenedor_mencion">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="mecion_1"
+              />
+              <div class="contenedor_txt">
+                <h3>Mario</h3>
+                <p>
+                  Miles de productos hay en el mercado, pero nada como una caja
+                  con gatitos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mencion">
+            <div class="contenedor_mencion">
+              <img
+                src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png"
+                alt="mecion_1"
+              />
+              <div class="contenedor_txt">
+                <h3>Mario</h3>
+                <p>
+                  Miles de productos hay en el mercado, pero nada como una caja
+                  con gatitos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">contacto@mail.com</a>
+    </footer>
 
     <!-- <div id="prueba">
         <div id="segundo">segundo</div>
         <img src="./images/logo.svg" alt="brand"/>
     </div> -->
-
-</body>
+  </body>
 </html>

@@ -1,0 +1,30 @@
+@media (max-width: 600px){
+   body{
+       background-color: yellowgreen;
+   }
+
+   #cajas{
+       flex-wrap: wrap;
+       height: auto;
+       max-height: none;
+       padding: 1em 0;
+   }
+
+   .caja, .caracteristica, .mencion{
+       margin-top: auto;
+       width: auto;
+       padding-bottom: var(--space);
+   }
+
+   #titulo{
+    padding: 1em;
+    /* width:90%; */  /* se elimina pq se desborda cuando font size aumenta o cambio tampo de pantalla, el tamaño se ajusta con el restante del div */
+    }    
+
+    #caracteristicas, #menciones{
+        display: inherit;
+    
+    }
+
+
+}

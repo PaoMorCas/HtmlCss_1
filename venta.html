@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css" >
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>Brand</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="./images/logo.svg" alt="brand" />
+      </div>
+      <div id="options">
+        <ul>
+          <li><a href="#">Faqs</a></li>
+          <li><a href="#">Productos y descripción</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="container-ventas">
+        <div class="producto-venta">
+          <div class="contenedor_img">
+            <img src="https://static.platzi.com/media/tmp/class-files/git/Desarrollo_web/Desarrollo_web-c10/images/box2.png" alt="producto_1">      
+          </div>
+          <h3>Producto 1</h3>
+          <p>Miles de productos hay en el mercado, <br> pero nada como una caja con gatos</p>
+        </div>
+        <div>
+          <div id="modulo_pago">
+            <form action="http://google.com" method="POST">
+              <label for="name">Nombre</label>
+              <input id="name" type="text" placeholder="Ingrese nombre" name="nombre" class="data">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Ingrese correo" name="correo" class="data">
+              <label for="tel">Teléfono</label>
+              <input id="tel" type="text" placeholder="Ingrese teléfono" name="telefono" class="data">
+              <input type="submit" class="main_button" name="cargar" value="Cargar">
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">contacto@mail.com</a>
+    </footer>
+  </body>
+</html>
